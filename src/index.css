@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "grotesk";
+  src: url("/fonts/Akzidenz-grotesk-black.woff");
+}
+@font-face {
+  font-family: "helvetica";
+  src: url("/fonts/helvetica.woff");
+}
+@font-face {
+  font-family: "ibm";
+  src: url("/fonts/IBMPlexSans-Regular.woff");
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-grotesk: "grotesk";
+  --font-helvetica: "helvetica";
+  --font-ibm: "ibm";
+  --color-dark: #0d0d0d;
+  --color-light: #ebe9e1;
+  --color-muted-light: #5a5b5a;
+  --color-muted-dark: #9a999a;
+  --color-border-light: #868c94;
+  --color-border-dark: #1e293a;
+}
+
+body {
+  color: black;
+  font-family: "helvetica";
+  background-color: var(--color-light);
+  opacity: 0.8;
+  background-image:
+    linear-gradient(#5555551a 1px, transparent 1px),
+    linear-gradient(to right, #5555551a 1px, var(--color-light) 1px);
+  background-size: 20vw 20vw;
+}
+
+body.dark {
+  color: white;
+   background-color: var(--color-dark);
+  opacity: 0.8;
+  background-image:
+    linear-gradient(#55555543 1px, transparent 1px),
+    linear-gradient(to right, #55555543 1px, var(--color-dark) 1px);
+  background-size: 20vw 20vw;
+}
