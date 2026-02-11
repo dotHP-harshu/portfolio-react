@@ -21,8 +21,10 @@ export const ThemeProvider = ({ children }: PropsWithChildren) => {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
   };
   useEffect(() => {
-    document.body.classList.toggle("dark");
-    localStorage.setItem("HarshPortfolioTheme", theme)
+    theme === "dark"
+      ? document.body.classList.add("dark")
+      : document.body.classList.remove("dark");
+    localStorage.setItem("HarshPortfolioTheme", theme);
   }, [theme]);
 
   return (
