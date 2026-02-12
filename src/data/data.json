@@ -1,0 +1,180 @@
+{
+  "header": {
+    "name": "Harsh Prajapati"
+  },
+  "hero_section": {
+    "heading": [
+      "Code",
+      "With",
+      "Intent."
+    ],
+    "para": "Building high-performance web interfaces where structure, speed, and clean design converge.",
+    "ctaText": "download resume",
+    "heroImgSrc": "/images/hero-img.png"
+  },
+  "project_section": {
+    "heading": "systems_built",
+    "para": "Projects crafted to solve real business problems with clean design and strong performance.",
+    "mainProjects": [
+      {
+        "title": "DotSQL",
+        "para": "Performance-first database visualizer with real-time reactive data binding and schema mapping.",
+        "tags": [
+          "html",
+          "css",
+          "javascript"
+        ],
+        "image": "/images/project.png",
+        "liveLink": "this is live link",
+        "codeLink": "this is code link"
+      },
+      {
+        "title": "DoSQL",
+        "para": "Performance-first database visualizer with real-time reactive data binding and schema mapping.",
+        "tags": [
+          "html",
+          "css",
+          "javascript"
+        ],
+        "image": "/images/project.png",
+        "liveLink": "this is live link",
+        "codeLink": "this is code link"
+      },
+      {
+        "title": "DotQL",
+        "para": "Performance-first database visualizer with real-time reactive data binding and schema mapping.",
+        "tags": [
+          "html",
+          "css",
+          "javascript"
+        ],
+        "image": "/images/project.png",
+        "liveLink": "this is live link",
+        "codeLink": "this is code link"
+      }
+    ]
+  },
+  "skill_section": {
+    "heading": "skill_matrix",
+    "para": "Modern web technologies I use to deliver reliable and scalable solutions.",
+    "skillCategories": [
+      {
+        "name": "language",
+        "skills": [
+          {
+            "skill": "javascript",
+            "label": "js"
+          },
+          {
+            "skill": "TypeScript",
+            "label": "ts"
+          },
+          {
+            "skill": "Python",
+            "label": "py"
+          }
+        ]
+      },
+      {
+        "name": "frontend",
+        "skills": [
+          {
+            "skill": "React.js",
+            "label": "re"
+          },
+          {
+            "skill": "tailWindcss",
+            "label": "tw"
+          }
+        ]
+      },
+      {
+        "name": "backend",
+        "skills": [
+          {
+            "skill": "Node.js",
+            "label": "no"
+          },
+          {
+            "skill": "Express.js",
+            "label": "ex"
+          },
+          {
+            "skill": "MongoDB",
+            "label": "mg"
+          },
+          {
+            "skill": "Mongoose",
+            "label": "mo"
+          },
+          {
+            "skill": "REST APIs",
+            "label": "rs"
+          }
+        ]
+      },
+      {
+        "name": "dev tools",
+        "skills": [
+          {
+            "skill": "Git",
+            "label": "gt"
+          },
+          {
+            "skill": "GitHub",
+            "label": "gh"
+          },
+          {
+            "skill": "VSCode",
+            "label": "vs"
+          },
+          {
+            "skill": "Postman",
+            "label": "pm"
+          }
+        ]
+      },
+      {
+        "name": "deployment",
+        "skills": [
+          {
+            "skill": "Netlify",
+            "label": "nl"
+          },
+          {
+            "skill": "Vercel",
+            "label": "vl"
+          }
+        ]
+      },
+      {
+        "name": "AI/Automation (exploring)",
+        "skills": [
+          {
+            "skill": "OpenRouter API",
+            "label": "or"
+          },
+          {
+            "skill": "Promp Eng.",
+            "label": "pe"
+          }
+        ]
+      }
+    ]
+  },
+  "about_section": {
+    "heading": "who_i_am",
+    "paras": [
+      "I’m Harsh Prajapati — a self-driven web developer focused on building high-quality digital products.",
+      "I specialize in transforming ideas into fast, responsive, and thoughtfully engineered interfaces. With a strong foundation in frontend development and growing full-stack expertise, I enjoy solving real-world problems through clean code and modern design systems."
+    ],
+    "aboutImgSrc": "/images/about-img.png"
+  },
+  "contact_section": {
+    "heading": [
+      "Let's",
+      "Execute."
+    ],
+    "para": "Available for select collaborations and architectural consulting. Direct communication preferred."
+  }
+}

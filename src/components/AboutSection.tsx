@@ -1,9 +1,9 @@
-const ABOUT_PARAS = [
-  "   hello! I’m Harsh Prajapati.",
-  "I’m a self-motivated web developer based in Uttar Pradesh, India. I loves transforming designs into clean, functional, and engaging web experiences. I am passionate about building responsive, and user-friendly websites.",
-];
+import type { AboutSectionInterface } from "../types/types";
 
-function AboutSection() {
+interface AboutSectionProps {
+  data: AboutSectionInterface;
+}
+function AboutSection({ data }: AboutSectionProps) {
   return (
     <section className="border border-border-light dark:border-border-dark py-10 px-4 max-sm:px-0 max-sm:py-6">
       {/* about container  */}
@@ -13,7 +13,7 @@ function AboutSection() {
         <div className="h-full bg-light dark:bg-dark  flex justify-center items-center">
           <div className="border border-muted-light dark:border-muted-dark w-3/4 p-1">
             <img
-              src="/images/about-img.png"
+              src={data.aboutImgSrc}
               alt="hero-img"
               className="w-full h-auto object-center object-cover grayscale-100"
             />
@@ -24,12 +24,12 @@ function AboutSection() {
         <div className=" flex justify-evenly items-start flex-col max-sm:justify-center gap-4">
           <div>
             <h2 className="uppercase text-6xl font-grotesk font-bold max-xs:text-3xl">
-              about_me
+              {data.heading}
             </h2>
           </div>
           {/* ----- para -----  */}
           <div className="w-full max-w-lg space-y-4 max-sm:space-y-2">
-            {ABOUT_PARAS.map((para, index) => (
+            {data.paras.map((para, index) => (
               <p
                 key={`para-${index}`}
                 className="text-3xl font-extralight font-helvetica text-muted-light dark:text-muted-dark leading-none max-sm:text-xl"

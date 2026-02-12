@@ -1,8 +1,11 @@
 import { ArrowRight } from "lucide-react";
+import type { ContactSectionInterface } from "../types/types";
 
-const CONTACT_HEADING = ["Let's", "Execute."];
 
-function ContactSection() {
+interface ContactSectionProps {
+  data: ContactSectionInterface;
+}
+function ContactSection({ data }: ContactSectionProps) {
   return (
     <section className="border border-border-light dark:border-border-dark py-10 px-4 max-sm:px-2">
       {/* about container  */}
@@ -11,7 +14,7 @@ function ContactSection() {
         <div className=" flex justify-start items-start flex-col max-sm:gap-4">
           {/* ----- heading -----  */}
           <div className="">
-            {CONTACT_HEADING.map((h) => (
+            {data.heading.map((h) => (
               <div key={h} className="w-fit h-fit overflow-hidden">
                 <h3 className="text-8xl uppercase font-extrabold leading-none font-grotesk max-sm:text-5xl break-all">
                   {h}
@@ -23,8 +26,9 @@ function ContactSection() {
           {/* ----- para -----  */}
           <div className="w-full max-w-lg ">
             <p className="text-xl font-extralight font-helvetica text-muted-light dark:text-muted-dark leading-none">
-              Available for select collaborations and architectural consulting.
-              Direct communication preferred.
+            {
+              data.para
+            }
             </p>
           </div>
           {/* ----- para -----  */}
