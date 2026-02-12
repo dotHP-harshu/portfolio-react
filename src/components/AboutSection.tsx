@@ -5,7 +5,7 @@ const ABOUT_PARAS = [
 
 function AboutSection() {
   return (
-    <section className="border border-border-light dark:border-border-dark py-10 px-4">
+    <section className="border border-border-light dark:border-border-dark py-10 px-4 max-sm:px-0 max-sm:py-6">
       {/* about container  */}
       <div className="min-h-dvh w-full px-4 grid grid-cols-2 max-sm:grid-cols-1 ">
         {/* left  */}
@@ -21,18 +21,18 @@ function AboutSection() {
         </div>
         {/* left  */}
         {/* right  */}
-        <div className=" flex justify-evenly items-start flex-col ">
+        <div className=" flex justify-evenly items-start flex-col max-sm:justify-center gap-4">
           <div>
-            <h2 className="uppercase text-6xl font-extrabold ml-auto w-fit">
+            <h2 className="uppercase text-6xl font-grotesk font-bold max-xs:text-3xl">
               about_me
             </h2>
           </div>
           {/* ----- para -----  */}
-          <div className="w-full max-w-lg space-y-4">
+          <div className="w-full max-w-lg space-y-4 max-sm:space-y-2">
             {ABOUT_PARAS.map((para, index) => (
               <p
                 key={`para-${index}`}
-                className="text-3xl font-extralight font-helvetica text-muted-light dark:text-muted-dark leading-none"
+                className="text-3xl font-extralight font-helvetica text-muted-light dark:text-muted-dark leading-none max-sm:text-xl"
               >
                 {para}
               </p>

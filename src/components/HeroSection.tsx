@@ -2,23 +2,23 @@ const HERO_HEADING = ["Logic", "In", "Motion."];
 
 function HeroSection() {
   return (
-    <div className="min-h-dvh border border-border-light dark:border-border-dark w-full px-4 grid grid-cols-2 max-sm:grid-cols-1 pt-10">
+    <div className="min-h-dvh border border-border-light dark:border-border-dark w-full p-4 grid grid-cols-2 max-md:grid-cols-1 pt-10  max-xs:p-2">
       {/* left  */}
-      <div className="">
+      <div className="self-center h-fit">
         {/* ----- heading -----  */}
-        <div className="-space-y-20">
+        <div className="-space-y-20 max-md:-space-y-10">
           {HERO_HEADING.map((h) => (
-            <div className="w-fit h-fit overflow-hidden">
-              <span className="text-9xl font-extrabold leading-normal font-grotesk">
+            <div key={h} className="w-fit h-fit overflow-hidden">
+              <h2 className="text-9xl font-extrabold leading-normal font-grotesk max-md:text-7xl max-xs:text-6xl">
                 {h}
-              </span>
+              </h2>
             </div>
           ))}
         </div>
         {/* ----- heading -----  */}
         {/* ----- para -----  */}
         <div className="w-full max-w-lg ">
-          <p className="text-xl font-extralight font-helvetica text-muted-light dark:text-muted-dark leading-none">
+          <p className="text-xl font-extralight font-helvetica text-muted-light dark:text-muted-dark leading-normal max-xs:text-lg">
             Bridging the gap between rigid engineering principles and fluid user
             interfaces. Defined by structural honesty and typographic precision.
           </p>
@@ -34,7 +34,7 @@ function HeroSection() {
       </div>
       {/* left  */}
       {/* right  */}
-      <div className="h-full bg-light dark:bg-dark  flex justify-center items-center">
+      <div className="h-full bg-light dark:bg-dark  flex justify-center items-center max-md:order-first">
         <div className="border border-muted-light dark:border-muted-dark w-3/4 p-1">
           <img
             src="/images/hero-img.png"

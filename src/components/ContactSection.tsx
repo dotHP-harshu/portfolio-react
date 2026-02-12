@@ -4,18 +4,18 @@ const CONTACT_HEADING = ["Let's", "Execute."];
 
 function ContactSection() {
   return (
-    <section className="border border-border-light dark:border-border-dark py-10 px-4">
+    <section className="border border-border-light dark:border-border-dark py-10 px-4 max-sm:px-2">
       {/* about container  */}
-      <div className="w-full px-4 grid grid-cols-2 max-sm:grid-cols-1 ">
+      <div className="w-full px-4 grid grid-cols-2 max-sm:grid-cols-1 max-sm:px-2">
         {/* left  */}
-        <div className=" flex justify-start items-start flex-col">
+        <div className=" flex justify-start items-start flex-col max-sm:gap-4">
           {/* ----- heading -----  */}
           <div className="">
             {CONTACT_HEADING.map((h) => (
-              <div className="w-fit h-fit overflow-hidden">
-                <span className="text-8xl uppercase font-extrabold leading-none font-grotesk">
+              <div key={h} className="w-fit h-fit overflow-hidden">
+                <h3 className="text-8xl uppercase font-extrabold leading-none font-grotesk max-sm:text-5xl break-all">
                   {h}
-                </span>
+                </h3>
               </div>
             ))}
           </div>
@@ -31,7 +31,7 @@ function ContactSection() {
         </div>
         {/* left  */}
         {/* right  */}
-        <div className="h-full bg-light dark:bg-dark  flex justify-center items-center">
+        <div className="h-full bg-light dark:bg-dark  flex justify-center items-center max-sm:mt-6">
           <div className="w-full border-4 border-border-light dark:border-border-dark p-4">
             <form className="space-y-6">
               <div className="border border-border-light dark:border-border-dark">

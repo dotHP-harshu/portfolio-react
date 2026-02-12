@@ -8,7 +8,7 @@ import SkillSection from "./components/SkillSection";
 
 function App() {
   return (
-    <main className="max-w-7xl mx-auto px-6 ">
+    <main className="max-w-7xl mx-auto px-6 max-sm:px-2">
       <Header />
       <HeroSection />
       <ProjectSection />

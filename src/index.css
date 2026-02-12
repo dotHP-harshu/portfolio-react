@@ -6,7 +6,7 @@
 }
 @font-face {
   font-family: "helvetica";
-  src: url("/fonts/helvetica.woff");
+  src: url("/fonts/PublicSans.woff2");
 }
 @font-face {
   font-family: "ibm";
@@ -25,6 +25,7 @@
   --color-muted-dark: #9a999a;
   --color-border-light: #868c94;
   --color-border-dark: #1e293a;
+  --breakpoint-xs: 30rem;
 }
 
 body {
@@ -40,7 +41,7 @@ body {
 
 body.dark {
   color: white;
-   background-color: var(--color-dark);
+  background-color: var(--color-dark);
   opacity: 0.8;
   background-image:
     linear-gradient(#55555543 1px, transparent 1px),
